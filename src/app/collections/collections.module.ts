@@ -24,6 +24,9 @@ import { TabsComponent } from './tabs/tabs.component';
     CommonModule,
     CollectionsRoutingModule,
     SharedModule
+  ],
+  exports: [
+    TableComponent
   ]
 })
 export class CollectionsModule { }

@@ -26,6 +26,11 @@ const routes: Routes = [
     loadChildren: async () =>
       (await import('./mods/mods.module')).ModsModule,
   },
+  {
+    path: 'search',
+    loadChildren: async () =>
+      (await import('./search/search.module')).SearchModule,
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];
