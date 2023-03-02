@@ -16,6 +16,11 @@ const routes: Routes = [
         (m) => m.CollectionsModule
       ),
   },
+  {
+    path: 'views',
+    loadChildren: async () =>
+      (await import('./views/views.module')).ViewsModule,
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];
