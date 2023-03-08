@@ -1,0 +1,21 @@
+<div class="ui placeholder segment">
+  <div class="ui two column stackable center aligned grid">
+    <div class="ui vertical divider">=></div>
+    <div class="middle aligned row">
+      <div class="column">
+        <div class="ui icon header">
+          <i class="search icon"></i>
+          Search photo on unsplash
+        </div>
+        <div class="field">
+          <button class="ui primary button" (click)="onClick()">Generate New Photo</button>
+        </div>
+      </div>
+      <div class="column">
+        <img *ngIf="photoUrl" [src]="photoUrl">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui divider"></div>
